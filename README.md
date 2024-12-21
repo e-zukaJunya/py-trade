@@ -9,4 +9,5 @@ rye remove {package_name} # Remove a package
 rye sync # Sync the packages
 ```
 
-source "$HOME/.rye/env"
+ruff check --select I --fix
+ruff format

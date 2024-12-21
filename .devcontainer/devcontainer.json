@@ -6,16 +6,17 @@
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "ms-toolsai.jupyter",
-                // "visualstudioexptteam.vscodeintellicode",
+                "charliermarsh.ruff",
+                "visualstudioexptteam.vscodeintellicode",
+                "tamasfe.even-better-toml",
+                "esbenp.prettier-vscode",
 
                 // markdown
                 "yzhang.markdown-all-in-one",
 
-                // その他見た目系
+                // その他便利ツール
                 "oderwat.indent-rainbow",
                 "ryu1kn.partial-diff",
-
-                // その他便利ツール
                 "alefragnani.bookmarks",
                 "christian-kohler.path-intellisense",
                 "wmaurer.change-case"
