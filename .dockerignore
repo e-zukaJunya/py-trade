@@ -1,1 +1,5 @@
 *
+!.python-version
+!pyproject.toml
+!requirements*
+!README.md

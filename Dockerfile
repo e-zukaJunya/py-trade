@@ -1,8 +1,6 @@
 # ベースイメージとしてPythonの公式イメージを使用
 FROM python:3.12-slim
 
-RUN ls
-
 # 必要なパッケージをインストール
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
@@ -10,15 +8,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# ryeをインストール
-# RUN curl -sSf https://rye.astral.sh/get | bash
+ENV RYE_HOME="/opt/rye"
+ENV PATH="$RYE_HOME/shims:$PATH"
 
-# # 環境変数を設定
-# ENV PATH="/root/.rye/bin:$PATH"
+# ryeをインストール
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN curl -sSf https://rye.astral.sh/get | RYE_INSTALL_OPTION="--yes" bash
 
 # 作業ディレクトリを設定
 WORKDIR /app
 
 # プロジェクトの依存関係をインストール
-# COPY pyproject.toml poetry.lock ./
-# RUN rye sync
+COPY pyproject.toml .python-version requirements* README.md ./
+RUN rye sync

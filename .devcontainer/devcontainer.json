@@ -1,32 +1,31 @@
 {
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        // python
-        // "ms-python.python",
-        // "ms-python.vscode-pylance",
-        // "visualstudioexptteam.vscodeintellicode",
-        // "njpwerner.autodocstring",
-        // "ms-toolsai.jupyter",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // python
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                // "visualstudioexptteam.vscodeintellicode",
 
-        // markdown
-        "yzhang.markdown-all-in-one",
+                // markdown
+                "yzhang.markdown-all-in-one",
 
-        // その他見た目系
-        "oderwat.indent-rainbow",
-        "ryu1kn.partial-diff",
+                // その他見た目系
+                "oderwat.indent-rainbow",
+                "ryu1kn.partial-diff",
 
-        // その他便利ツール
-        "alefragnani.bookmarks",
-        "christian-kohler.path-intellisense",
-        "wmaurer.change-case"
-      ]
-    }
-  },
-  // 使用するcompose fileの指定
-  "dockerComposeFile": ["../docker-compose.yml"],
-  // compose fileの中のどのサービスを使用するか
-  "service": "python",
-  // アタッチした際、コンテナ内のどこをカレントディレクトリとするか
-  "workspaceFolder": "/app"
+                // その他便利ツール
+                "alefragnani.bookmarks",
+                "christian-kohler.path-intellisense",
+                "wmaurer.change-case"
+            ]
+        }
+    },
+    // 使用するcompose fileの指定
+    "dockerComposeFile": ["../docker-compose.yml"],
+    // compose fileの中のどのサービスを使用するか
+    "service": "python",
+    // アタッチした際、コンテナ内のどこをカレントディレクトリとするか
+    "workspaceFolder": "/app"
 }
