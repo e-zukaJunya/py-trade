@@ -133,6 +133,8 @@ traitlets==5.14.3
     # via jupyter-client
     # via jupyter-core
     # via matplotlib-inline
+typing-extensions==4.12.2
+    # via ipython
 tzdata==2024.2
     # via pandas
 urllib3==2.2.3
