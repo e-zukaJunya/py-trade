@@ -1,0 +1,13 @@
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    entrypoint: >
+      bash -c "sleep infinity"
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env

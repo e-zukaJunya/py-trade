@@ -1,0 +1,5 @@
+# ignoreとサンプル以外はGitにいれたくない
+*
+!sample.ipynb
+!python-oracledb.ipynb
+!.gitignore
