@@ -7,6 +7,8 @@ authors = [
 ]
 dependencies = [
     "polars>=1.17.1",
+    "mplfinance>=0.12.10b0",
+    "pandas-datareader>=0.10.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -17,7 +19,9 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
