@@ -10,6 +10,8 @@
 #   universal: false
 
 -e file:.
+beautifulsoup4==4.12.3
+    # via yfinance
 certifi==2024.12.14
     # via requests
 charset-normalizer==3.4.0
@@ -20,29 +22,42 @@ cycler==0.12.1
     # via matplotlib
 fonttools==4.55.3
     # via matplotlib
+frozendict==2.4.6
+    # via yfinance
+html5lib==1.1
+    # via yfinance
 idna==3.10
     # via requests
 kiwisolver==1.4.7
     # via matplotlib
 lxml==5.3.0
     # via pandas-datareader
+    # via yfinance
 matplotlib==3.10.0
     # via mplfinance
 mplfinance==0.12.10b0
     # via app
+multitasking==0.0.11
+    # via yfinance
 numpy==2.2.0
     # via contourpy
     # via matplotlib
     # via pandas
+    # via yfinance
 packaging==24.2
     # via matplotlib
 pandas==2.2.3
     # via mplfinance
     # via pandas-datareader
+    # via yfinance
 pandas-datareader==0.10.0
     # via app
+peewee==3.17.8
+    # via yfinance
 pillow==11.0.0
     # via matplotlib
+platformdirs==4.3.6
+    # via yfinance
 polars==1.17.1
     # via app
 pyparsing==3.2.0
@@ -52,11 +67,20 @@ python-dateutil==2.9.0.post0
     # via pandas
 pytz==2024.2
     # via pandas
+    # via yfinance
 requests==2.32.3
     # via pandas-datareader
+    # via yfinance
 six==1.17.0
+    # via html5lib
     # via python-dateutil
+soupsieve==2.6
+    # via beautifulsoup4
 tzdata==2024.2
     # via pandas
 urllib3==2.2.3
     # via requests
+webencodings==0.5.1
+    # via html5lib
+yfinance==0.2.51
+    # via app

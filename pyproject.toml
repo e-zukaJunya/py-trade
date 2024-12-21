@@ -9,6 +9,7 @@ dependencies = [
     "polars>=1.17.1",
     "mplfinance>=0.12.10b0",
     "pandas-datareader>=0.10.0",
+    "yfinance>=0.2.51",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
